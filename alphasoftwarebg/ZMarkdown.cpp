@@ -141,7 +141,7 @@ private:
 	void save(string outFileName)
 	{
 		remove(outFileName.c_str());
-		int outFile = zzz_open(outFileName.c_str(), O_WRONLY|O_CREAT
+		int outFile = zzz_open(outFileName.c_str(), O_RDWR|O_CREAT
 #ifdef _WIN32
 			|O_BINARY
 #endif
